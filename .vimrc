@@ -13,7 +13,7 @@ set softtabstop=4			            " Number of spaces in tab when editin
 set expandtab				            " Turns tab into spaces
 
 set nocompatible			            " Necessary for some stuff	
-set guifont=DejaVu\ Sans\ Mono:h11	    " Font
+set guifont=Fira\ Code:h11	            " Font
 set autoindent				            " Indentation
 set cindent				                " Indentation
 set backspace=indent,eol,start		    " Backspace
@@ -46,11 +46,7 @@ set clipboard+=unnamed			        " Copy & paste from system
 set paste 				                " Copy & paste from system
 set go+=a				                " Copy & paste from system
 
-noremap <Up> <Nop>			
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
-inoremap <Up> <Nop>
-inoremap <Down> <Nop>
-inoremap <Left> <Nop>
-inoremap <Right> <Nop>
+vmap <C-c> "+yi
+vmap <C-x> "+c
+vmap <C-v> c<ESC>"+p
+imap <C-v> <ESC>"+pa
