@@ -11,6 +11,7 @@ syntax on                               " Syntax coloring
 set tabstop=4				            " Number of visual spaces per tab
 set softtabstop=4			            " Number of spaces in tab when editin
 set expandtab				            " Turns tab into spaces
+set updatetime=100
 
 set nocompatible			            " Necessary for some stuff	
 set guifont=Fira\ Code:h11	            " Font
