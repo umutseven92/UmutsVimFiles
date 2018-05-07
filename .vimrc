@@ -5,8 +5,7 @@ autocmd BufWinEnter * NERDTreeMirror	" Make every tab start with NERDTree
 autocmd VimEnter * wincmd p		        " Start with the cursor on the main tab
 autocmd Focuslost * :wa			        " Save on focus lost
 
-colorscheme gruvbox 
-let g:gruvbox_contrast_dark = 'hard'
+colorscheme base16-default-dark
 syntax on                               " Syntax coloring
 
 set tabstop=4				            " Number of visual spaces per tab
