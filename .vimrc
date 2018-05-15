@@ -3,7 +3,7 @@ execute pathogen#infect()
 autocmd VimEnter * NERDTree		        " Start vim with NERDTree
 autocmd BufWinEnter * NERDTreeMirror	" Make every tab start with NERDTree
 autocmd VimEnter * wincmd p		        " Start with the cursor on the main tab
-autocmd Focuslost * :wa			        " Save on focus lost
+autocmd Focuslost * silent! wa			" Save on focus lost and dont show errors if buffer is unsaved
 
 colorscheme base16-default-dark 
 syntax on                               " Syntax coloring
